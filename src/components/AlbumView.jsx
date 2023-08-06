@@ -13,7 +13,7 @@ function AlbumView() {
         const fetchData = async () => {
             const response = await fetch(API_URL)
             const resData = await response.json()
-            setAlbumData(resData.results)
+        
         }
         fetchData()
     }, [id])
